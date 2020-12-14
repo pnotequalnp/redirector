@@ -1,0 +1,21 @@
+cabal-version:       2.4
+
+name:                redirector
+version:             0.1.0.0
+license:             AGPL-3.0-only
+license-file:        LICENSE
+author:              Kevin Mullins
+maintainer:          46154511+pnotequalnp@users.noreply.github.com
+copyright:           © 2020 Kevin Mullins
+category:            Web
+
+executable redirector
+  main-is:             Main.hs
+  build-depends:       base ^>=4.13.0.0
+                     , bytestring
+                     , http-types
+                     , postgresql-simple
+                     , text
+                     , wai
+                     , warp ^>=3.3.13
+  default-language:    Haskell2010
